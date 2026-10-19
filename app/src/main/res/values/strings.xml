@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="app_name" translatable="false">Calcumeow</string>
+    <string name="idioma_chip">ES</string>
+    <string name="cd_cambiar_idioma">Cambiar idioma</string>
+    <string name="cd_volver">Volver</string>
+    <string name="cd_gato">Gatito de Calcumeow</string>
+
+    <!-- Bienvenida y menú -->
+    <string name="bienvenida_saludo">¡Miau! Tú los datos, yo el resultado.</string>
+    <string name="boton_empezar">Empezar</string>
+    <string name="menu_pregunta">¿Qué calculamos hoy?</string>
+    <string name="boton_abrir">Abrir cálculo</string>
+
+    <!-- Propina y cuenta dividida -->
+    <string name="calc_propina_titulo">Propina y cuenta dividida</string>
+    <string name="calc_propina_nube">Divide la cuenta\u00A0e incluye la propina.</string>
+    <string name="calc_propina_leyenda">Calcula el total con propina y cuánto paga cada persona.</string>
+    <string name="campo_cuenta">Cuenta</string>
+    <string name="ayuda_cuenta">Monto de la cuenta. Mayor que 0.</string>
+    <string name="campo_propina">Propina</string>
+    <string name="ayuda_propina">Entre 0 y 100.</string>
+    <string name="campo_personas">Personas</string>
+    <string name="ayuda_personas">Entero, mínimo 1.</string>
+    <string name="cd_formula_propina">Fórmulas: el total es la cuenta por uno más p entre cien. Lo que paga cada persona es el total entre n.</string>
+
+    <!-- Distancia entre dos puntos -->
+    <string name="calc_distancia_titulo">Distancia entre dos puntos</string>
+    <string name="calc_distancia_nube">Mide qué tan lejos están dos puntos.</string>
+    <string name="calc_distancia_leyenda">Calcula la distancia entre dos puntos del plano.</string>
+    <string name="campo_x1" translatable="false"><i>x</i><sub>1</sub></string>
+    <string name="campo_y1" translatable="false"><i>y</i><sub>1</sub></string>
+    <string name="campo_x2" translatable="false"><i>x</i><sub>2</sub></string>
+    <string name="campo_y2" translatable="false"><i>y</i><sub>2</sub></string>
+    <string name="ayuda_x1">Coordenada x del primer punto.</string>
+    <string name="ayuda_y1">Coordenada y del primer punto.</string>
+    <string name="ayuda_x2">Coordenada x del segundo punto.</string>
+    <string name="ayuda_y2">Coordenada y del segundo punto.</string>
+    <string name="cd_formula_distancia">Fórmula: d es la raíz cuadrada de (x2 menos x1) al cuadrado más (y2 menos y1) al cuadrado.</string>
+
+    <!-- Sistema de ecuaciones 2×2 -->
+    <string name="calc_sistema_titulo">Sistema de ecuaciones 2×2</string>
+    <string name="calc_sistema_nube">Resuelve dos ecuaciones lineales.</string>
+    <string name="calc_sistema_leyenda">Encuentra x y y en dos ecuaciones lineales.</string>
+    <string name="campo_a1" translatable="false"><i>a</i><sub>1</sub></string>
+    <string name="campo_b1" translatable="false"><i>b</i><sub>1</sub></string>
+    <string name="campo_c1" translatable="false"><i>c</i><sub>1</sub></string>
+    <string name="campo_a2" translatable="false"><i>a</i><sub>2</sub></string>
+    <string name="campo_b2" translatable="false"><i>b</i><sub>2</sub></string>
+    <string name="campo_c2" translatable="false"><i>c</i><sub>2</sub></string>
+    <string name="ayuda_coef_x">Coef. de x</string>
+    <string name="ayuda_coef_y">Coef. de y</string>
+    <string name="ayuda_constante">Constante</string>
+    <string name="cd_formula_sistema">Fórmulas del sistema: a1 x más b1 y igual a c1, y a2 x más b2 y igual a c2. D es a1 b2 menos a2 b1. x es c1 b2 menos c2 b1 entre D. y es a1 c2 menos a2 c1 entre D.</string>
+
+    <!-- Gasolina del viaje -->
+    <string name="calc_gasolina_titulo">Gasolina del viaje</string>
+    <string name="calc_gasolina_nube">Calcula litros\u00A0y costo del viaje.</string>
+    <string name="calc_gasolina_leyenda">Calcula los litros, el costo del viaje y lo que paga cada persona.</string>
+    <string name="campo_distancia">Distancia</string>
+    <string name="ayuda_distancia">Recorrido total. Mayor que 0.</string>
+    <string name="campo_rendimiento">Rendimiento</string>
+    <string name="ayuda_rendimiento">Kilómetros por litro.</string>
+    <string name="campo_precio">Precio por litro</string>
+    <string name="ayuda_precio">Precio de un litro. Mayor que 0.</string>
+    <string name="cd_formula_gasolina">Fórmulas: los litros son la distancia entre el rendimiento. El costo es los litros por el precio. Lo que paga cada persona es el costo entre n.</string>
+
+    <!-- Unidades -->
+    <string name="unidad_dinero" translatable="false">$</string>
+    <string name="unidad_porcentaje" translatable="false">%</string>
+    <string name="unidad_personas">pers.</string>
+    <string name="unidad_plano" translatable="false">u</string>
+    <string name="unidad_km" translatable="false">km</string>
+    <string name="unidad_km_litro" translatable="false">km/L</string>
+    <string name="unidad_dinero_litro" translatable="false">$/L</string>
+    <string name="unidad_litros" translatable="false">L</string>
+    <string name="valor_con_unidad" translatable="false">%1$s %2$s</string>
+
+    <!-- Formulario -->
+    <string name="formula_etiqueta">Fórmula</string>
+    <string name="boton_calcular">Calcular</string>
+    <string name="boton_limpiar">Limpiar</string>
+    <string name="boton_compartir">Compartir</string>
+
+    <!-- Resultado -->
+    <string name="resultado_titulo">Resultado</string>
+    <string name="res_total_con_propina">Total con propina</string>
+    <string name="res_pago_por_persona">Cada persona paga</string>
+    <string name="res_distancia">Distancia</string>
+    <string name="res_valor_x" translatable="false">x</string>
+    <string name="res_valor_y" translatable="false">y</string>
+    <string name="res_litros">Litros</string>
+    <string name="res_costo_viaje">Costo del viaje</string>
+
+    <!-- Errores de validación -->
+    <string name="error_obligatorio">Este campo es obligatorio</string>
+    <string name="error_numero">Escribe un número válido</string>
+    <string name="error_mayor_cero">Debe ser mayor que 0</string>
+    <string name="error_no_negativo">No puede ser negativo</string>
+    <string name="error_entero">Debe ser un número entero mayor que 0</string>
+    <string name="error_maximo">Debe ser menor o igual que %1$s</string>
+    <string name="error_minimo">Debe ser mayor o igual que %1$s</string>
+    <string name="error_sistema">El sistema no tiene una única solución (D = 0). Cambia los coeficientes.</string>
+    <string name="aviso_corregir">Corrige los campos marcados</string>
+
+    <!-- Compartir -->
+    <string name="compartir_titulo">Compartir resultado</string>
+    <string name="compartir_encabezado" translatable="false">Calcumeow · %1$s</string>
+    <string name="compartir_linea" translatable="false">%1$s: %2$s</string>
+</resources>

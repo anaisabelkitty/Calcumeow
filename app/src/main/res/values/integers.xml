@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Máximo de líneas del texto de la nube (2 desde 360dp de ancho, ver values-w360dp). -->
+    <integer name="menu_nube_max_lineas">3</integer>
+
+    <!-- Líneas que reserva el nombre de cada tarjeta del menú (2 desde 400dp de ancho, ver values-w400dp). -->
+    <integer name="menu_tarjeta_min_lineas">3</integer>
+</resources>

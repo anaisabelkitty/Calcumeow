@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta aqua y petróleo -->
+    <color name="fondo">#BDE8E4</color>
+    <color name="principal">#2F7280</color>
+    <color name="oscuro">#2E2429</color>
+    <color name="blanco">#FFFFFF</color>
+
+    <!-- Campos y textos -->
+    <color name="campo_relleno">#EAF1F2</color>
+    <color name="campo_unidad">#4F7782</color>
+    <color name="texto_secundario">#4A4247</color>
+    <color name="formula_fondo">#DDF1EF</color>
+
+    <!-- Tarjeta de resultado (arena) -->
+    <color name="resultado_fondo">#EADFCB</color>
+    <color name="resultado_texto">#5E5240</color>
+
+    <!-- Errores: el rojo se usa solo para esto -->
+    <color name="error">#B71C1C</color>
+
+    <!-- Colores del gatito (para el ícono) -->
+    <color name="gato_cabeza">#FFFFFF</color>
+    <color name="gato_contorno">#8F7A8C</color>
+    <color name="gato_oreja">#F68FCB</color>
+    <color name="gato_rubor">#FAB4E0</color>
+    <color name="gato_ojos">#54444C</color>
+    <color name="gato_bigotes">#6E5C69</color>
+</resources>

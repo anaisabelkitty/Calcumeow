@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base. Se usa la versión clara de Material 3 porque la paleta de la app es fija. -->
+    <style name="Base.Theme.Calcumeow" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/principal</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="29">false</item>
+    </style>
+
+    <style name="Theme.Calcumeow" parent="Base.Theme.Calcumeow" />
+
+    <!-- Textos -->
+    <style name="TextoTitulo">
+        <item name="android:fontFamily">@font/pixelify_sans_negrita</item>
+        <item name="android:textColor">@color/oscuro</item>
+    </style>
+
+    <style name="TextoCuerpo">
+        <item name="android:textColor">@color/oscuro</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Botones en forma de pastilla (se usan con AppCompatButton para conservar su fondo propio) -->
+    <style name="BotonChip">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="BotonPrincipal">
+        <item name="android:background">@drawable/bg_boton_oscuro</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="BotonSecundario">
+        <item name="android:background">@drawable/bg_boton_blanco</item>
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Campo de texto: relleno suave, sin borde; en error se marca en rojo -->
+    <style name="Campo.Entrada" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/campo_relleno</item>
+        <item name="boxStrokeColor">@color/campo_borde</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="errorTextColor">@color/error</item>
+        <item name="errorIconTint">@color/error</item>
+        <item name="suffixTextColor">@color/campo_unidad</item>
+        <item name="hintEnabled">false</item>
+        <item name="suffixTextAppearance">@style/Campo.Sufijo</item>
+    </style>
+
+    <style name="Campo.Sufijo" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

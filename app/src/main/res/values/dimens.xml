@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Alto de cada tarjeta del menú (116dp desde 400dp de ancho, ver values-w400dp). -->
+    <dimen name="tarjeta_alto">124dp</dimen>
+
+    <!-- Relleno vertical de la tarjeta y separación entre el cuadrito del ícono y el nombre. -->
+    <dimen name="tarjeta_padding_vertical">6dp</dimen>
+    <dimen name="tarjeta_separacion_icono_texto">8dp</dimen>
+
+    <!-- Espacio mínimo arriba y abajo del bloque del gatito y la nube. -->
+    <dimen name="menu_bloque_aire_min">16dp</dimen>
+
+    <!-- Proporciones del bloque del gatito y la nube, relativas al ancho del bloque. -->
+    <item name="menu_nube_ancho" type="dimen" format="float">0.66</item>
+    <item name="menu_gato_ancho" type="dimen" format="float">0.37</item>
+    <item name="menu_gato_inicio_vertical" type="dimen" format="float">0.6192</item>
+
+    <!-- Escala mínima del bloque del gatito y la nube antes de que aparezca el scroll. -->
+    <item name="menu_bloque_escala_min" type="dimen" format="float">0.8</item>
+
+    <!-- Separación entre los dos renglones de tarjetas y entre las dos columnas (la mitad a cada lado). -->
+    <dimen name="menu_separacion_filas">12dp</dimen>
+    <dimen name="menu_mitad_separacion_columnas">6dp</dimen>
+</resources>

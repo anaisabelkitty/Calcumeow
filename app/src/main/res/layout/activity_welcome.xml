@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical">
+
+    <!-- Solo el chip de idioma, a la derecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chipIdioma"
+            style="@style/BotonChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_cambiar_idioma"
+            android:text="@string/idioma_chip" />
+    </LinearLayout>
+
+    <!-- Título, nube y gatito centrados; con ScrollView para que quepa al girar la pantalla -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                style="@style/TextoTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="52sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nube"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintDimensionRatio="H,170:118"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.62">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:importantForAccessibility="no"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_nube_inicio" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guiaIzq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.17" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guiaDer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.83" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guiaArriba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.20" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guiaAbajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.66" />
+
+                    <TextView
+                        android:id="@+id/txtSaludo"
+                        style="@style/TextoCuerpo"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="@string/bienvenida_saludo"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:autoSizeMaxTextSize="20sp"
+                        app:autoSizeMinTextSize="14sp"
+                        app:autoSizeTextType="uniform"
+                        app:layout_constraintBottom_toBottomOf="@id/guiaAbajo"
+                        app:layout_constraintEnd_toEndOf="@id/guiaDer"
+                        app:layout_constraintStart_toStartOf="@id/guiaIzq"
+                        app:layout_constraintTop_toTopOf="@id/guiaArriba" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imgGato"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="@string/cd_gato"
+                    app:layout_constraintDimensionRatio="H,23:18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nube"
+                    app:layout_constraintWidth_percent="0.46"
+                    app:srcCompat="@drawable/ic_gato" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón de ancho completo, pegado abajo -->
+    <!-- MaterialButton para que la flecha quede pegada al texto, centrados juntos -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEmpezar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:minHeight="60dp"
+        android:text="@string/boton_empezar"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/oscuro"
+        app:cornerRadius="999dp"
+        app:icon="@drawable/ic_flecha_der"
+        app:iconGravity="textEnd"
+        app:iconPadding="10dp"
+        app:iconTint="@color/blanco" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nombre de la tarjeta del menú: oscuro sobre el rosa de la seleccionada, blanco sobre el teal de las demás. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/oscuro" android:state_selected="true" />
+    <item android:color="@color/blanco" />
+</selector>

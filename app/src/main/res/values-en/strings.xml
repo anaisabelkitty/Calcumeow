@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="idioma_chip">EN</string>
+    <string name="cd_cambiar_idioma">Change language</string>
+    <string name="cd_volver">Back</string>
+    <string name="cd_gato">Calcumeow cat</string>
+
+    <!-- Welcome and menu -->
+    <string name="bienvenida_saludo">Meow! You bring the data, I\'ll bring the result.</string>
+    <string name="boton_empezar">Start</string>
+    <string name="menu_pregunta">What shall we calculate today?</string>
+    <string name="boton_abrir">Open calculation</string>
+
+    <!-- Tip and split bill -->
+    <string name="calc_propina_titulo">Tip and split bill</string>
+    <string name="calc_propina_nube">Split the bill and add the tip.</string>
+    <string name="calc_propina_leyenda">Find the total with tip and what each person pays.</string>
+    <string name="campo_cuenta">Bill</string>
+    <string name="ayuda_cuenta">Amount of the bill. Greater than 0.</string>
+    <string name="campo_propina">Tip</string>
+    <string name="ayuda_propina">Between 0 and 100.</string>
+    <string name="campo_personas">People</string>
+    <string name="ayuda_personas">Whole number, at least 1.</string>
+    <string name="cd_formula_propina">Formulas: the total is the bill times one plus p over one hundred. What each person pays is the total over n.</string>
+
+    <!-- Distance between two points -->
+    <string name="calc_distancia_titulo">Distance between two points</string>
+    <string name="calc_distancia_nube">Measure how far apart two points are.</string>
+    <string name="calc_distancia_leyenda">Find the distance between two points on the plane.</string>
+    <string name="ayuda_x1">x coordinate of the first point.</string>
+    <string name="ayuda_y1">y coordinate of the first point.</string>
+    <string name="ayuda_x2">x coordinate of the second point.</string>
+    <string name="ayuda_y2">y coordinate of the second point.</string>
+    <string name="cd_formula_distancia">Formula: d is the square root of (x2 minus x1) squared plus (y2 minus y1) squared.</string>
+
+    <!-- 2×2 system of equations -->
+    <string name="calc_sistema_titulo">2×2 system of equations</string>
+    <string name="calc_sistema_nube">Solve two linear equations.</string>
+    <string name="calc_sistema_leyenda">Find x and y in two linear equations.</string>
+    <string name="ayuda_coef_x">Coeff. of x</string>
+    <string name="ayuda_coef_y">Coeff. of y</string>
+    <string name="ayuda_constante">Constant</string>
+    <string name="cd_formula_sistema">System formulas: a1 x plus b1 y equals c1, and a2 x plus b2 y equals c2. D is a1 b2 minus a2 b1. x is c1 b2 minus c2 b1 over D. y is a1 c2 minus a2 c1 over D.</string>
+
+    <!-- Trip fuel cost -->
+    <string name="calc_gasolina_titulo">Trip fuel cost</string>
+    <string name="calc_gasolina_nube">Find the liters and cost of the trip.</string>
+    <string name="calc_gasolina_leyenda">Find the liters, the cost of the trip, and what each person pays.</string>
+    <string name="campo_distancia">Distance</string>
+    <string name="ayuda_distancia">Total trip length. Greater than 0.</string>
+    <string name="campo_rendimiento">Fuel economy</string>
+    <string name="ayuda_rendimiento">Kilometers per liter.</string>
+    <string name="campo_precio">Price per liter</string>
+    <string name="ayuda_precio">Price of one liter. Greater than 0.</string>
+    <string name="cd_formula_gasolina">Formulas: liters are the distance over the fuel economy. The cost is liters times the price. What each person pays is the cost over n.</string>
+
+    <!-- Units -->
+    <string name="unidad_personas">ppl</string>
+
+    <!-- Form -->
+    <string name="formula_etiqueta">Formula</string>
+    <string name="boton_calcular">Calculate</string>
+    <string name="boton_limpiar">Clear</string>
+    <string name="boton_compartir">Share</string>
+
+    <!-- Result -->
+    <string name="resultado_titulo">Result</string>
+    <string name="res_total_con_propina">Total with tip</string>
+    <string name="res_pago_por_persona">Each person pays</string>
+    <string name="res_distancia">Distance</string>
+    <string name="res_litros">Liters</string>
+    <string name="res_costo_viaje">Trip cost</string>
+
+    <!-- Validation errors -->
+    <string name="error_obligatorio">This field is required</string>
+    <string name="error_numero">Enter a valid number</string>
+    <string name="error_mayor_cero">Must be greater than 0</string>
+    <string name="error_no_negativo">Cannot be negative</string>
+    <string name="error_entero">Must be a whole number greater than 0</string>
+    <string name="error_maximo">Must be at most %1$s</string>
+    <string name="error_minimo">Must be at least %1$s</string>
+    <string name="error_sistema">The system does not have a single solution (D = 0). Change the coefficients.</string>
+    <string name="aviso_corregir">Fix the highlighted fields</string>
+
+    <!-- Share -->
+    <string name="compartir_titulo">Share result</string>
+</resources>

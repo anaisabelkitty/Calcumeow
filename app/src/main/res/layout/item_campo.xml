@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un campo del formulario. La pantalla de cálculo tiene 6 de estos y muestra solo los que necesita. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblCampo"
+        style="@style/TextoCuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtCampo"
+        android:paddingBottom="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- saveEnabled=false porque hay varios campos con el mismo id: el estado se guarda a mano en la Activity -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCampo"
+        style="@style/Campo.Entrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:saveEnabled="false"
+        app:expandedHintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:saveEnabled="false"
+            android:textColor="@color/oscuro"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Ayuda propia: queda pegada al borde izquierdo del campo. -->
+    <TextView
+        android:id="@+id/txtAyuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textColor="@color/texto_secundario"
+        android:textSize="13sp" />
+</LinearLayout>
